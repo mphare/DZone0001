@@ -8,7 +8,7 @@ import javax.persistence.Table;
 
 
 @Entity
-@Table(name = "COURSE")
+@Table(name = "course")
 public class Course {
     private long courseId;
     private String courseName;
@@ -24,7 +24,7 @@ public class Course {
 
     @Id
     @GeneratedValue
-    @Column(name = "COURSE_ID")
+    @Column(name = "course_id")
     public long getCourseId() {
         return this.courseId;
     }
@@ -33,7 +33,7 @@ public class Course {
         this.courseId = courseId;
     }
 
-    @Column(name = "COURSE_NAME", nullable = false, length = 100)
+    @Column(name = "course_name", nullable = false, length = 100)
     public String getCourseName() {
         return this.courseName;
     }
